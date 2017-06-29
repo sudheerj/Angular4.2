@@ -1,0 +1,33 @@
+<form novalidate>
+  <pe-steps [(activeIndex)]="activeIndex" (change)="onChangeStep($event)">
+    <!-- Inputs and Options -->
+    <pe-step label="Inputs and Options">
+    </pe-step>
+
+    <!-- Animation function -->
+    <pe-step label="animation function">
+      <input type="number" name="age" [(ngModel)]="age" min="0" max="130"/>
+    </pe-step>
+
+    <!-- Query function -->
+    <pe-step label="query function">
+      <!--<div [@races]="races?.length">
+        <button class="btn btn-primary mb-2" (click)="toggle()">Toggle</button>
+        <div *ngFor="let race of races | slice:0:4">
+          <h2>{{race.name}}</h2>
+          <p>{{race.startInstant}}</p>
+        </div>
+      </div>-->
+    </pe-step>
+
+    <!-- Stagger function -->
+    <pe-step label="stagger function">
+    </pe-step>
+
+    <!-- Animation builder -->
+    <pe-step label="Animation builder">
+    </pe-step>
+  </pe-steps>
+</form>
+
+<p-growl [value]="msgs"></p-growl>
